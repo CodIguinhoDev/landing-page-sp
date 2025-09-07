@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: gray; */
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .logo {
+    width: 80px;
+    margin-right: 50%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 14px 14px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    background: #e6d8d8;
+    background: linear-gradient(67deg, rgba(230, 216, 216, 1) 0%, rgba(36, 24, 24, 1) 100%);
+}
+
+.titulo-h1 {
+    text-align: center;
+}
+
+.titulo-h1 h1 {
+    font-size: 160px;
+    color: white;
+    font-weight: 600;
+}
+
+.titulo-h1 a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    background-color: white;
+    padding: 14px 14px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.titulo-h1 a:hover {
+    background: #e6d8d8;
+    background: linear-gradient(67deg, rgba(230, 216, 216, 1) 0%, rgba(36, 24, 24, 1) 100%);
+}
+
+.backround-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .backround-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .backround-video {
+        width: auto;
+        height: 100%;
+    }
+}
